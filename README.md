@@ -1,2 +1,5 @@
 # binary-counter
 Implementation of binary counter 
+In my implementation i have used adjacency list to store my winners.If the number of elements in the input file is exact power of two, we will traverse through the array and for each element we create node with data and next as its fild.We find the position of these newly created node in our data structure array of pointers(adjacency list).For every element we get from the input element,we run a inner while loop where we find the position of root pointer(root pointer is a pointer contaning list of winners),and after  coming out of while loop we insert our root list in the binary Counter.Root element's position found by making competetion with already present elements in the binary Counter.
+								If the element is not exact power of two some list will be present in 0 to n - 2 	
+position.Becouse those elements will not have any competetors.So we will make competitions among those list and winner list will be updated in n - 1 th position and then we can find second biggest element easily.So to find the competetors we use two pointers.
